@@ -56,7 +56,8 @@
         </div>
 
         <div class="input_box">
-          <a class="input-submit" href="logout.php">Cerrar Sesión</a>
+          <a href="logout.php" class="input-submit"style="color: var(--black-color); text-decoration: none; display: flex; align-items: center; justify-content: center;">
+          Cerrar Sesión</a>
         </div>
       </div>
     </div>

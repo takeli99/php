@@ -1,12 +1,13 @@
 <?php
+    include 'conexion_bbdd.php';
+    
     session_start();
 
-    if (!isset($_SESSION["user"])) {
+    if (isset($_SESSION["user"])) {
         header("Location: login.html");
         exit();
     }
 
-    include 'conexion_bbdd.php';
 
     $username = $_POST['username'];
     $full_name = $_POST['full_name'];
