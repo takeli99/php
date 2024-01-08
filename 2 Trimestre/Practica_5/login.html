@@ -11,7 +11,7 @@
 
 <body>
   <!-- partial:index.partial.html -->
-  <form method="get" action="meterAlumno.php">
+  <form method="POST" action="login.php">
     <div class="wrapper">
       <div class="login_box">
         <div class="login-header">
@@ -19,13 +19,13 @@
         </div>
 
         <div class="input_box">
-          <input type="text" id="user" class="input-field" required>
+          <input type="text" id="user" class="input-field" name="username" required>
           <label for="user" class="label">Username</label>
           <i class="bx bx-user icon"></i>
         </div>
 
         <div class="input_box">
-          <input type="password" id="pass" class="input-field" required>
+          <input type="password" id="pass" class="input-field" name="password" required>
           <label for="pass" class="label">Password</label>
           <i class="bx bx-lock-alt icon"></i>
         </div>
@@ -46,7 +46,7 @@
         </div>
 
         <div class="register">
-          <span>Don't have an account? <a href="registro.html">Register</a></span>
+          <span>Don't have an account? <a href="register.html">Register</a></span>
         </div>
       </div>
     </div>

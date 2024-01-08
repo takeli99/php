@@ -20,7 +20,7 @@
         $result_select_one = mysqli_query($conexion, $query_select_one);
 
         if ($result_select_one && $row = mysqli_fetch_assoc($result_select_one)) {
-            echo "<form method='POST' action='modificar.php'> <!-- Cambiado de GET a POST -->
+            echo "<form method='POST' action='modificar.php'>
                 <div class='wrapper'>
                     <div class='login_box'>
                         <div class='login-header'>

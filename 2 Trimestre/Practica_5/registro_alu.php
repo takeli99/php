@@ -13,10 +13,10 @@
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $query = "INSERT INTO profesores (Username, Full_Name, `E-mail`, Password) 
+    $query = "INSERT INTO alumnos (Username, Full_Name, `E-mail`, Password) 
                 VALUES ('$username', '$full_name', '$email', '$password')";
 
     $execution = mysqli_query($conexion, $query);
 
-    header("Location: login.html");
+    header("Location: meterAlumno.php");
 ?>

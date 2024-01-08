@@ -16,13 +16,13 @@
 
 <body>
   <!-- partial:index.partial.html -->
-  <form method="POST" action="registro.php">
+  <form method="POST" action="registro_alu.php">
     <div class="wrapper">
       <div class="contenedor">
         <div class="login-header">
           <span>Alumno</span>
         </div>
-
+        
         <div class="input_box">
           <input type="text" id="user" class="input-field" name="username" required>
           <label for="user" class="label">Username</label>
@@ -50,8 +50,13 @@
         <div class="input_box">
           <input type="submit" class="input-submit" value="Nuevo Alumno">
         </div>
+
         <div class="input_box">
           <button class="input-submit" onclick="mostrarDatos()">Mostrar Datos</button>
+        </div>
+
+        <div class="input_box">
+          <a class="input-submit" href="logout.php">Cerrar Sesión</a>
         </div>
       </div>
     </div>
@@ -93,8 +98,6 @@
     } else {
       echo "Error en la consulta SELECT: " . mysqli_error($conexion);
     }
-
-    // Cerrar la conexión a la base de datos
     mysqli_close($conexion);
     ?>
   </div>
