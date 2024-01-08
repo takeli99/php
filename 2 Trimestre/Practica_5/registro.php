@@ -11,5 +11,5 @@
 
     $execution = mysqli_query($conexion, $query);
 
-    header("Location:meterAlumnos.php");
+    header("Location:meterAlumno.php");
 ?>
