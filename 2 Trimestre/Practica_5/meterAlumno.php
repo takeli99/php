@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  if (isset($_SESSION['username'])) {
+    header("Location: login.html");
+    exit();
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -82,18 +90,18 @@
                     <th>E-mail</th>
                     <th>Password</th>
                   </tr>";
-      while ($row = mysqli_fetch_assoc($result_select)) {
-        echo "<tr>";
-        echo "<td>" . $row['ID'] . "</td>";
-        echo "<td>" . $row['Username'] . "</td>";
-        echo "<td>" . $row['Full_Name'] . "</td>";
-        echo "<td>" . $row['E-mail'] . "</td>";
-        echo "<td>" . $row['Password'] . "</td>";
-        echo "<td class='acciones'><a href='modificar.php?id=" . $row['ID'] . "'>Modificar</a></td>";
-        echo "<td class='acciones'><a href='eliminar.php?id=" . $row['ID'] . "'>Eliminar</a></td>";
-        echo "</tr>";
-      }
-      echo "</table>
+                  while ($row = mysqli_fetch_assoc($result_select)) {
+                    echo "<tr>";
+                    echo "<td>" . $row['ID'] . "</td>";
+                    echo "<td>" . $row['Username'] . "</td>";
+                    echo "<td>" . $row['Full_Name'] . "</td>";
+                    echo "<td>" . $row['E-mail'] . "</td>";
+                    echo "<td>" . $row['Password'] . "</td>";
+                    echo "<td class='acciones'><a href='modificar.php?id=" . $row['ID'] . "'>Modificar</a></td>";
+                    echo "<td class='acciones'><a href='eliminar.php?id=" . $row['ID'] . "'>Eliminar</a></td>";
+                    echo "</tr>";
+                  }
+                  echo "</table>
               </div>
             </div>";
     } else {
