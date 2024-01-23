@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    color: #333;
+}
+
+.burger {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.burger img {
+    max-width: 100px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.burger-info {
+    flex-grow: 1;
+}
+
+.price {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.description {
+    color: #666;
+}
